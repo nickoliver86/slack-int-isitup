@@ -16,28 +16,7 @@ curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 $ch_response = curl_exec($ch);
 curl_close($ch);
 
-{
-    "domain": "duckduckgo.com",
-    "port": 80,
-    "status_code": 1,
-    "response_ip": "46.51.197.88",
-    "response_code": 200,
-    "response_time": 0.025
-}
-
 $response_array = json_decode($ch_response, TRUE);
-
-array(
-    "domain" => "duckduckgo.com",
-    "port" => 80,
-    "status_code" => 1,
-    "response_ip" => "46.51.197.88",
-    "response_code" => 200,
-    "response_time" => 0.025
-);
-
-$response_array['domain']
-$response_array['status_code']
 
 if($ch_response === FALSE){
 
